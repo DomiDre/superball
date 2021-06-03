@@ -1,0 +1,19 @@
+[package]
+name = "superball"
+version = "0.1.0"
+authors = ["Dominique <dominiquedresen@gmail.com>"]
+edition = "2018"
+description = "Small crate to implement superball code in Rust and for compilation to WASM"
+repository = "https://github.com/domidre/superball"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+ndarray = "0.15"
+gauss-quad = "0.1"
+rusfun = "0.4"
+wasm-bindgen = "0.2"
